@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5066575e-e7b3-4a13-a88d-558f95970f58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/user/get_user_me_usecase.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/usecase.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/di/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/di/provider.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/user/datasource.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user/datasource.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/user/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/user/provider.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/user/get_user_me_usecase.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user/get_user_me_usecase.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/user/repository.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user/repository.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/user/router.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user/router.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/user/usecase.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/usecase.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/usecase.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/di/provider.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/di/provider.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +82,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Makefile Target.test_user_me" />
         <item itemvalue="Makefile Target.run" />
+        <item itemvalue="Makefile Target.test_user_me" />
         <item itemvalue="Makefile Target.test_search" />
         <item itemvalue="Makefile Target.test" />
       </list>
@@ -112,6 +102,18 @@
       <option name="presentableId" value="Default" />
       <updated>1648223405305</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add Dockerfile and get data from use case">
+      <created>1648305060422</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648305060422</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add Dockerfile and get data from use case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Dockerfile and get data from use case" />
   </component>
 </project>

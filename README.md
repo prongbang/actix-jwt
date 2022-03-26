@@ -40,3 +40,15 @@ Output
 ```shell
 Search: Devไปวันๆ
 ```
+
+
+### Document
+
+- `Box` is for single ownership. A great use case is to use this when we want to store primitive types (stored on stack) on heap.
+- `Rc` is for multiple ownership.
+- `Rc<RefCell<T>>` is Shared ownership with interior mutability and dynamically checked borrow rules.
+- `Arc` is for multiple ownership, but threadsafe.
+- `Arc<Mutex<RefCell<T>>>` is Thread-safe shared ownership with interior mutability and mutual exclusion.
+- `RefCell` is for “interior mutability”; that is, when you need to mutate something behind a &T.
+- `Cell` is for “interior mutability” for Copy types; that is, when you need to mutate something behind a &T. Cell, is similar to RefCell except that instead of giving references to the inner value, the value is copied in and out of the Cell.
+- `Mutex`, which offers interior mutability that’s safe to use across threads

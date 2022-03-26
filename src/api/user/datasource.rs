@@ -1,3 +1,5 @@
+use std::sync::Arc;
+
 pub trait DataSource {
     fn get_user_me(&self) -> String;
 }
@@ -5,8 +7,8 @@ pub trait DataSource {
 pub struct UserDataSource {}
 
 impl UserDataSource {
-    pub fn new() -> Box<dyn DataSource> {
-        Box::new(UserDataSource {})
+    pub fn new() -> Arc<dyn DataSource> {
+        Arc::new(UserDataSource {})
     }
 }
 

@@ -1,13 +1,14 @@
+use std::sync::Arc;
 use crate::api::user::repository::Repository;
 use crate::core::usecase::UseCase;
 
 pub struct GetUserMeUseCase {
-    pub repository: Box<dyn Repository>,
+    pub repository: Arc<dyn Repository>,
 }
 
 impl GetUserMeUseCase {
-    pub fn new(repository: Box<dyn Repository>) -> Box<dyn UseCase<String, String>> {
-        Box::new(GetUserMeUseCase { repository })
+    pub fn new(repository: Arc<dyn Repository>) -> Arc<dyn UseCase<String, String>> {
+        Arc::new(GetUserMeUseCase { repository })
     }
 }
 
@@ -17,6 +18,6 @@ impl UseCase<String, String> for GetUserMeUseCase {
     }
 }
 
-pub async fn execute(repository: &Box<dyn Repository>) -> String {
+pub async fn execute(repository: &Arc<dyn Repository>) -> String {
     return repository.get_user_me();
 }

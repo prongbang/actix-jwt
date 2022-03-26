@@ -1,3 +1,4 @@
+use std::sync::Arc;
 use crate::api::user::datasource::DataSource;
 
 pub trait Repository {
@@ -5,12 +6,12 @@ pub trait Repository {
 }
 
 pub struct UserRepository {
-    datasource: Box<dyn DataSource>,
+    datasource: Arc<dyn DataSource>,
 }
 
 impl UserRepository {
-    pub fn new(datasource: Box<dyn DataSource>) -> Box<Self> {
-        Box::new(UserRepository { datasource })
+    pub fn new(datasource: Arc<dyn DataSource>) -> Arc<Self> {
+        Arc::new(UserRepository { datasource })
     }
 }
 
