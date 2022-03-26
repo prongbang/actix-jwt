@@ -1,5 +1,11 @@
 # actix-jwt
 
+### JWT Secret key
+
+```
+secret69
+```
+
 ### Start Server
 
 - Run with main.rs
@@ -40,7 +46,6 @@ Output
 ```shell
 Search: Devไปวันๆ
 ```
-
 
 ### Document
 
