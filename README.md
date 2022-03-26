@@ -1,5 +1,11 @@
 # actix-jwt
 
+### JWT Secret key
+
+```
+secret69
+```
+
 ### Start Server
 
 ```shell
