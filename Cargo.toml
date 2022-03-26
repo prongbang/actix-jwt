@@ -1,0 +1,16 @@
+[package]
+name = "actix-jwt"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1.0.136"
+serde_json = "1.0.79"
+actix-web = "4"
+futures = "0.3.21"
+jsonwebtoken = "8.0.1"
+rust-crypto = "0.2.36"
+#mongodb = "0.9.2"
+diesel = { version = "1.4.2", features = ["postgres","uuidv07", "r2d2", "chrono"] }
