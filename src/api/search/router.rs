@@ -4,7 +4,7 @@ use crate::api::search::model::{Search, SearchClient};
 
 #[get("/search")]
 async fn get_search(search: Data<SearchClient>) -> impl Responder {
-    let result = search.search("Rust".to_string());
+    let result = search.search("Devไปวันๆ".to_string());
     format!("{}", result)
 }
 

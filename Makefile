@@ -7,4 +7,4 @@ test_user_me:
       -i 'http://127.0.0.1:8080/v1/user/me'
 
 test_search:
-	curl 'http://127.0.0.1:8080/v1/search'
+	curl http://127.0.0.1:8080/v1/search

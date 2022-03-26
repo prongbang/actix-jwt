@@ -3,7 +3,7 @@ use crate::{middleware};
 
 #[get("/user/me")]
 async fn get_user_me(_: middleware::jwt::Authorization) -> impl Responder {
-    format!("I am {}", "M")
+    format!("I am {}", "Devไปวันๆ")
 }
 
 pub fn initialize(cfg: &mut web::ServiceConfig) {
