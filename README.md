@@ -49,6 +49,8 @@ Search: Devไปวันๆ
 
 ### Document
 
+https://doc.rust-lang.org/rust-by-example/std/arc.html
+
 - `Box` is for single ownership. A great use case is to use this when we want to store primitive types (stored on stack) on heap.
 - `Rc` is for multiple ownership.
 - `Rc<RefCell<T>>` is Shared ownership with interior mutability and dynamically checked borrow rules.
