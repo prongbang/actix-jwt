@@ -2,8 +2,17 @@
 
 ### Start Server
 
+- Run with main.rs
+
 ```shell
 cargo run src/main.rs
+```
+
+- Run with docker
+
+```shell
+docker build -t actix_jwt .
+docker run -d -p 8080:8080 actix_jwt
 ```
 
 ### Get user me with JWT

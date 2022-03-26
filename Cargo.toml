@@ -12,5 +12,6 @@ actix-web = "4"
 futures = "0.3.21"
 jsonwebtoken = "8.0.1"
 rust-crypto = "0.2.36"
-#mongodb = "0.9.2"
-diesel = { version = "1.4.2", features = ["postgres","uuidv07", "r2d2", "chrono"] }
+async-trait = "0.1.53"
+log = "0.4"
+dyn-clone = "1.0.5"
