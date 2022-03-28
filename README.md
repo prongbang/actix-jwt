@@ -53,6 +53,8 @@ https://doc.rust-lang.org/rust-by-example/std/arc.html
 
 - `Box` is for single ownership. A great use case is to use this when we want to store primitive types (stored on stack) on heap.
 - `Rc` is for multiple ownership.
+- `Rc` เป็น smart pointer ที่ย้ายข้อมูลจาก stack ไปอยู่ใน heap มันช่วยให้เราโคลน smart pointer 
+- `Rc` ตัวอื่นๆ โดยทุกตัวจะสามารถ ยืมโดยไม่เปลี่ยนแปลง ข้อมูลที่อยู่ใน heap ได้ เมื่อ smart pointer ตัวสุดท้ายถูก drop เท่านั้นจึงจะคืนหน่วยความจำใน heap
 - `Rc<RefCell<T>>` is Shared ownership with interior mutability and dynamically checked borrow rules.
 - `Arc` is for multiple ownership, but threadsafe.
 - `Arc<Mutex<RefCell<T>>>` is Thread-safe shared ownership with interior mutability and mutual exclusion.
